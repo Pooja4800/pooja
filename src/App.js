@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import "./App.css"
+import { Pooja } from "./screens/dashboard"
+
+export default function App() {
+    return (
+        <div className="App">
+            {/* <Dashboard/> */}
+            <Pooja
+                name={"Login"}
+                callBack={'handleclickHere'}
+                color={"red"}/>
+            <Pooja 
+                name={"Click Here"}
+                callBack={'handleclickHere'} 
+                color={"pink"}/>
+            <Pooja
+                name={"Sign Up"}
+                callBack={'handleclickHere'}
+                color={"green"}/>
+        </div>
+    ) 
 }
-
-export default App;
