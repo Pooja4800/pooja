@@ -1,4 +1,5 @@
-.App {
+/* //selector */
+.App{
     padding-right: 30px;
     padding-left: 50px;
 }
@@ -9,13 +10,21 @@
     line-height: 5px;
     font-weight: 400;
 }
-.center{
+.addressBlock {
+    margin-bottom: 50px;
+}
+.sub {
+    margin-left: 100px;
+}
+
+.center {
     text-align: center;
 }
-.button{
+
+.alignRight {
+    text-align: end;
+}
+.bottom {
     background-color: aqua;
     width: 100px;
-}
-.sub{
-    margin-left: 100px;
 }
